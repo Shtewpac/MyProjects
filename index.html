@@ -153,13 +153,36 @@
                 </div>
                 <button class="toggle-button" id="button1" onclick="toggleDetails('details1', 'button1')">Read More</button>
             </div>
+
+            
             <div class="project">
                 <h2 onclick="toggleDetails('details2', 'button2')">Poker Hand Analyzer</h2>
                 <div class="project-summary">
                     Recognizes and evaluates poker hands from images or screenshots using computer vision and template matching techniques, targeting poker enthusiasts, developers, and AI researchers.
                 </div>
                 <div class="project-details" id="details2">
-                    <p>This tool uses computer vision to detect and evaluate poker hands in images or screenshots. It leverages template matching techniques to recognize card suits and ranks accurately. The project is designed for poker enthusiasts, developers, and AI researchers looking to automate the process of poker hand analysis.</p>
+                    <p>The Poker Hand Analyzer utilizes computer vision and template matching to accurately identify and assess poker hands from images or screenshots. The tool can process a wide range of visual input formats, including standard poker screenshots, mobile game captures, and even hand-drawn diagrams.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Card Detection:** Accurately locates and isolates individual cards within a complex scene.</li>
+                        <li>**Card Recognition:** Identifies the suit and rank of each card using template matching with a high degree of precision.</li>
+                        <li>**Hand Evaluation:** Employs standard poker rules to rank the detected cards, determining the best possible poker hand.</li>
+                        <li>**Result Presentation:** Clearly displays the recognized hand rank (e.g., "Royal Flush," "Full House") to the user.</li>
+                    </ul>
+                
+                    <p><strong>Applications:</strong></p>
+                    <ul>
+                        <li>**Poker Training:** Assists players in learning and practicing hand recognition and ranking.</li>
+                        <li>**Game Analysis:** Provides insights into hand strength and probability for post-game analysis.</li>
+                        <li>**AI Research:** Serves as a platform for developing and testing machine learning models for card and hand recognition.</li>
+                    </ul>
+                
+                    <p><strong>Technical Details:</strong></p>
+                    <ul>
+                        <li>**Programming Language:** Python</li>
+                        <li>**Libraries:** OpenCV (image processing), NumPy (numerical operations)</li>
+                    </ul>
                 </div>
                 <button class="toggle-button" id="button2" onclick="toggleDetails('details2', 'button2')">Read More</button>
             </div>
@@ -169,8 +192,17 @@
                     Transcribes audio files into text, splitting based on silence for manageable chunks, ideal for students and professionals.
                 </div>
                 <div class="project-details" id="details3">
-                    <p>This project focuses on transcribing audio files into text and splitting the audio based on silence to create manageable chunks. It is designed for students, journalists, researchers, and professionals who need to convert audio recordings into written notes. The tool utilizes speech recognition APIs and provides robust error handling.</p>
-                </div>
+                    <p>This tool streamlines the process of converting audio recordings (lectures, meetings, interviews, etc.) into easily searchable, editable text notes. By automatically splitting long audio files into smaller chunks based on silence, it improves transcription accuracy and allows for easier organization of notes.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Automatic Audio Chunking:** Divides audio files into manageable segments for improved transcription and note-taking.</li>
+                        <li>**Multiple Audio Format Support:** Accepts a wide range of audio formats (MP3, WAV, etc.), ensuring compatibility with different recording devices.</li>
+                        <li>**Accurate Transcription:** Utilizes state-of-the-art speech recognition APIs to convert audio into text with high accuracy.</li>
+                        <li>**Error Handling:** Includes robust error handling mechanisms to manage unexpected situations and ensure smooth operation.</li>
+                        <li>**Modular Design:** Built with a modular architecture for easy maintenance and future enhancements.</li>
+                    </ul>
+                </div>                
                 <button class="toggle-button" id="button3" onclick="toggleDetails('details3', 'button3')">Read More</button>
             </div>
             <div class="project">
@@ -179,18 +211,51 @@
                     Implementation of the classic Block Puzzle game with an AI agent learning optimal play using reinforcement learning techniques.
                 </div>
                 <div class="project-details" id="details4">
-                    <p>An implementation of the classic Block Puzzle game in Python, accompanied by an AI agent that learns to play the game optimally using reinforcement learning. The AI employs the Q-learning algorithm, ensuring a robust learning approach that allows the model to make optimal decisions based on dynamic game states.</p>
-                </div>
+                    <p>This project offers a unique blend of game development and artificial intelligence. It reimagines the classic Block Puzzle game by incorporating a Q-learning AI agent that learns to play the game at a proficient level.</p>
+                
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>**Classic Block Puzzle Gameplay:** Familiar and intuitive puzzle mechanics.</li>
+                        <li>**Variety of Block Shapes:** Tetrominoes, straight blocks, square blocks, and more.</li>
+                        <li>**Interactive Interface:** Drag-and-drop controls for easy block placement.</li>
+                        <li>**AI Agent:** The Q-learning agent progressively improves its performance through trial and error, eventually becoming a formidable opponent.</li>
+                        <li>**Customizability:** You can adjust game parameters and AI hyperparameters to experiment with different learning approaches.</li>
+                    </ul>
+                
+                    <p><strong>Technical Details:</strong></p>
+                    <ul>
+                        <li>**Programming Language:** Python</li>
+                        <li>**Libraries:** NumPy (for numerical operations), logging, Pygame (optional for future GUI)</li>
+                    </ul>
+                </div>                
                 <button class="toggle-button" id="button4" onclick="toggleDetails('details4', 'button4')">Read More</button>
             </div>
+
+
             <div class="project">
                 <h2 onclick="toggleDetails('details5', 'button5')">ChatbotProject</h2>
                 <div class="project-summary">
                     A Python-based chatbot designed to store and utilize user-specific information for personalized interactions.
                 </div>
                 <div class="project-details" id="details5">
-                    <p>A Python-based chatbot designed to store and utilize user-specific information for personalized interactions. The project leverages a local database to store user data securely and uses a modular design for extensibility. It integrates natural language processing through the GPT-3.5-turbo model.</p>
+                    <p>ChatbotProject is a Python-based chatbot designed to engage in personalized conversations with users. It remembers user details, past interactions, and leverages this information to create a more tailored and engaging chat experience. The project's core functionality is built on top of OpenAI's GPT-3.5-turbo language model, enabling natural and contextually relevant responses.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Personalized Interactions:** The chatbot maintains a memory of past conversations and user details, allowing for personalized responses and topic continuity.</li>
+                        <li>**Local Database:** Stores user data securely in a local database to ensure privacy and control.</li>
+                        <li>**OpenAI Integration:** Leverages GPT-3.5-turbo to generate sophisticated, contextually relevant replies.</li>
+                        <li>**Modular Architecture:** The codebase is organized into distinct modules (chatbot logic, database interaction, language model), promoting maintainability and extensibility.</li>
+                    </ul>
+                
+                    <p><strong>Potential Applications:</strong></p>
+                    <ul>
+                        <li>**Customer Support:** Can provide personalized assistance to customers, answering questions and resolving issues.</li>
+                        <li>**Personal Assistant:** Can help users schedule appointments, set reminders, or gather information from the web.</li>
+                        <li>**Educational Tool:** Can engage students in interactive learning sessions, offering explanations and feedback.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button5" onclick="toggleDetails('details5', 'button5')">Read More</button>
             </div>
             <div class="project">
@@ -199,8 +264,16 @@
                     An implementation of the Dinosaur Game using Pygame, with AI agents trained using Q-learning and Evolutionary Learning techniques to avoid obstacles.
                 </div>
                 <div class="project-details" id="details6">
-                    <p>An implementation of the Dinosaur Game using Pygame, with AI agents trained using Q-learning and Evolutionary Learning techniques to avoid obstacles. The project includes both Q-learning for reinforcement learning and Evolutionary Learning to evolve the best-performing AI agents over generations.</p>
+                    <p>This project is a unique take on the classic Dinosaur Game, where the goal is to guide a dinosaur through a desert landscape, dodging obstacles like cacti.  It showcases the implementation of two distinct artificial intelligence (AI) approaches for training the dinosaur to play the game effectively:</p>
+                
+                    <ul>
+                        <li>**Q-Learning:** A reinforcement learning technique where the AI learns by trial and error, associating actions with rewards. Over time, it figures out the best actions to take in different game situations to maximize its score.</li>
+                        <li>**Evolutionary Learning:** A method inspired by natural selection, where the AI evolves a population of virtual dinosaurs. The fittest dinosaurs (those that survive the longest) pass on their traits to the next generation, gradually improving the overall performance of the population.</li>
+                    </ul>
+                
+                    <p>This project not only provides an engaging game experience but also serves as a valuable educational tool to understand and experiment with different AI learning paradigms.  By observing the learning process and comparing the results of Q-learning and Evolutionary Learning, one can gain insights into the strengths and weaknesses of each approach.</p>
                 </div>
+                
                 <button class="toggle-button" id="button6" onclick="toggleDetails('details6', 'button6')">Read More</button>
             </div>
             <div class="project">
@@ -209,8 +282,18 @@
                     A tool for creating and visualizing involute spur gears based on user-defined specifications, aimed at DIY enthusiasts, mechanical engineers, and educators.
                 </div>
                 <div class="project-details" id="details7">
-                    <p>A tool for creating and visualizing involute spur gears based on user-defined specifications. The project is designed for DIY enthusiasts, mechanical engineers, and educators. It provides an intuitive interface for specifying gear parameters and visualizing the resulting gear profiles.</p>
+                    <p>The Gear Generator is a user-friendly tool for designing involute spur gears. It provides a visual interface where users can specify gear parameters such as the number of teeth, pitch radius, and pressure angle. The tool then generates a graphical representation of the gear, showing its tooth profile and overall dimensions.</p>
+                
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>**Intuitive Interface:** Easy-to-use graphical interface for entering gear specifications.</li>
+                        <li>**Accurate Generation:** Precisely calculates and draws the involute tooth profile based on input parameters.</li>
+                        <li>**Visualization:** Displays the generated gear with a detailed tooth profile for visual inspection.</li>
+                        <li>**Educational Resource:** Can be used as a learning tool to understand gear geometry and design principles.</li>
+                        <li>**Potential for Export:** The project could be extended to include features for exporting gear designs to various file formats for use in CAD software or manufacturing.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button7" onclick="toggleDetails('details7', 'button7')">Read More</button>
             </div>
             <div class="project">
@@ -219,18 +302,49 @@
                     A Python-based tool for creating and analyzing gear geometries, with capabilities to export designs in various 3D CAD file formats.
                 </div>
                 <div class="project-details" id="details8">
-                    <p>PyGear is a Python-based tool for creating and analyzing gear geometries, with capabilities to export designs in various 3D CAD file formats. The project supports the design of external gears, internal gears, and planetary stages, providing detailed customization options and accurate geometric calculations.</p>
+                    <p>PyGear is a sophisticated Python tool designed for the creation, analysis, and 3D modeling of gear geometries. It caters to the needs of mechanical engineers, CAD designers, and researchers involved in the intricate world of gear design and manufacturing.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Diverse Gear Types:** Supports the design of external gears, internal gears, and gears used in planetary gear systems, offering flexibility for various applications.</li>
+                        <li>**Export Capabilities:** Enables the export of generated gear designs to common 3D CAD file formats like STEP, IGES, and VRML, facilitating seamless integration with existing workflows.</li>
+                        <li>**Manufacturing Simulation:** Includes simulation capabilities for gear manufacturing processes such as hobbing, allowing engineers to assess the feasibility and potential issues in production.</li>
+                        <li>**Detailed Analysis:** Calculates key gear properties, including inertia tensors, providing insights into their mechanical behavior.</li>
+                        <li>**Advanced Geometry Library:** Leverages the powerful pythonOCC library for accurate and efficient geometric calculations and model generation.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button8" onclick="toggleDetails('details8', 'button8')">Read More</button>
             </div>
+
+
+
             <div class="project">
                 <h2 onclick="toggleDetails('details9', 'button9')">Gear Profile and Modeling Tool</h2>
                 <div class="project-summary">
                     A comprehensive tool for creating intricate gear profiles and 3D models, ensuring accurate calculations and compliance with engineering standards.
                 </div>
                 <div class="project-details" id="details9">
-                    <p>A comprehensive tool for creating intricate gear profiles and 3D models, ensuring accurate calculations and compliance with engineering standards. The project integrates advanced geometric libraries to automate the gear design process, providing detailed customization options and export capabilities for CAD applications.</p>
+                    <p>The Gear Profile and Modeling Tool is a powerful and versatile software application that revolutionizes the design and analysis of gears. It empowers engineers, designers, and manufacturers to create intricate gear profiles and generate accurate 3D models with meticulous attention to detail. </p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Comprehensive Gear Profile Calculations:** Enables precise calculations for both external and internal gears, ensuring compliance with engineering standards.</li>
+                        <li>**Flexible Parameterization:** Supports a wide range of customizable parameters, including root radius, flank angles, addendums, dedendums, and protuberance, accommodating diverse gear designs.</li>
+                        <li>**3D Modeling with pythonOCC:** Leverages the robust pythonOCC CAD library to generate accurate 3D models of the designed gear profiles.</li>
+                        <li>**Mass Properties Calculation:** Computes mass properties and moments of inertia for gear wheels, aiding in the analysis of dynamic behavior and performance.</li>
+                        <li>**Precise Geometry Creation:** Utilizes Geom_Circle and BRepBuilderAPI for accurate curve and shape generation, ensuring the fidelity of the gear models.</li>
+                        <li>**Gear Pair Adjustment:** Allows for fine-tuning of gear pair settings to achieve optimal meshing and smooth operation.</li>
+                    </ul>
+                
+                    <p><strong>Technical Highlights:</strong></p>
+                    <ul>
+                        <li>**Geometric and Trigonometric Algorithms:** Employs rigorous algorithms for computing gear profiles, ensuring accuracy and adherence to design specifications.</li>
+                        <li>**Optimization Routines:** Utilizes `scipy.optimize` for solving equations and finding critical points on gear profiles, ensuring precise modeling.</li>
+                        <li>**Differential Geometry:** Applies principles of differential geometry to determine tangent vectors and curve derivatives, enhancing the accuracy of gear tooth modeling.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button9" onclick="toggleDetails('details9', 'button9')">Read More</button>
             </div>
             <div class="project">
@@ -239,8 +353,19 @@
                     An OCR application integrating Google Cloud Vision for text detection and OpenAI’s GPT models for generating text-based responses.
                 </div>
                 <div class="project-details" id="details10">
-                    <p>An OCR application integrating Google Cloud Vision for text detection and OpenAI’s GPT models for generating text-based responses. The project is designed to automate text extraction and analysis from images or scanned documents, providing accurate and efficient OCR capabilities combined with AI-driven text processing.</p>
+                    <p>This innovative application harnesses the power of Google Cloud Vision for Optical Character Recognition (OCR) and OpenAI's GPT models to deliver a seamless and intelligent text processing experience. It caters to users who need to extract text from images or scanned documents and leverage AI to interpret, summarize, or expand upon the extracted content.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Image Text Extraction:** Accurately extracts text from various image formats, including screenshots and scans, using Google Cloud Vision's robust OCR capabilities.</li>
+                        <li>**AI-Powered Text Processing:** Leverages OpenAI's GPT models to understand and generate contextually relevant responses or summaries based on the extracted text.</li>
+                        <li>**User-Friendly Interface:** Provides an intuitive graphical user interface (GUI) built with Tkinter, allowing users to easily upload images, select OpenAI models, and customize system messages.</li>
+                        <li>**Image Processing Capabilities:**  Incorporates image processing techniques like cropping, scaling, and format conversion for optimal text extraction and analysis.</li>
+                        <li>**Automation and Recording:**  Allows for automated periodic screenshot capturing and processing, facilitating real-time or batch processing scenarios.</li>
+                        <li>**Error Handling and Timeouts:**  Implements robust error handling mechanisms and timeouts to ensure stability and manage long-running operations effectively.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button10" onclick="toggleDetails('details10', 'button10')">Read More</button>
             </div>
             <div class="project">
@@ -249,8 +374,25 @@
                     An advanced application for detecting and recognizing playing cards from images and evaluating poker hands using image processing and machine learning techniques.
                 </div>
                 <div class="project-details" id="details11">
-                    <p>An advanced application for detecting and recognizing playing cards from images and evaluating poker hands using image processing and machine learning techniques. The project combines template matching, contour detection, and OCR to accurately identify cards and determine the best poker hand.</p>
+                    <p>This sophisticated application combines cutting-edge computer vision and machine learning to accurately detect and recognize playing cards within images and evaluate poker hands. It is a powerful tool for developers creating card game software, poker enthusiasts analyzing gameplay, and researchers in the field of computer vision.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Real-Time Card Detection:** Rapidly identifies individual playing cards from images or video streams, even in complex environments.</li>
+                        <li>**Accurate Card Recognition:** Employs a combination of template matching and Optical Character Recognition (OCR) techniques to precisely determine the rank and suit of each card.</li>
+                        <li>**Poker Hand Evaluation:** Assesses the detected cards to identify the best possible poker hand based on established poker rules.</li>
+                        <li>**Hand Comparison:**  Compares multiple poker hands to automatically determine the winner.</li>
+                        <li>**Visual Feedback:** Annotates images with bounding boxes around detected cards and displays the evaluated hand rank for each player.</li>
+                    </ul>
+                
+                    <p><strong>Technical Highlights:</strong></p>
+                    <ul>
+                        <li>**Image Processing:** Leverages OpenCV for image manipulation, contour detection, and feature extraction.</li>
+                        <li>**OCR Integration:** Incorporates Google Cloud Vision API, EasyOCR, and Tesseract OCR for robust text recognition in challenging scenarios.</li>
+                        <li>**Machine Learning (Optional):**  Can be extended to utilize machine learning models for enhanced card detection and recognition accuracy.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button11" onclick="toggleDetails('details11', 'button11')">Read More</button>
             </div>
             <div class="project">
@@ -259,18 +401,55 @@
                     Leverages AI to assist in the filmmaking process by automating tasks and enhancing production workflows, aimed at filmmakers and production studios.
                 </div>
                 <div class="project-details" id="details12">
-                    <p>Leverages AI to assist in the filmmaking process by automating tasks and enhancing production workflows. The project aims to solve issues related to inefficient production workflows and the high costs and time associated with traditional filmmaking methods. It integrates machine learning algorithms and database management to streamline various aspects of film production.</p>
+                    <p>This ambitious project is a conceptual exploration of how artificial intelligence (AI) can be harnessed to transform the filmmaking process. It envisions a suite of tools designed to streamline various aspects of film production, from scriptwriting and storyboarding to visual effects and post-production.</p>
+                
+                    <p><strong>Potential Features:</strong></p>
+                    <ul>
+                        <li>**Automated Task Management:** AI algorithms could handle repetitive or time-consuming tasks, freeing up human creatives to focus on more strategic aspects.</li>
+                        <li>**Creative Assistance:** AI models could generate script ideas, suggest camera angles, or even compose music, providing a valuable source of inspiration for filmmakers.</li>
+                        <li>**Production Optimization:** AI could analyze vast amounts of production data to identify bottlenecks, optimize resource allocation, and predict potential risks, ultimately reducing costs and improving efficiency.</li>
+                        <li>**Collaboration Tools:** AI-powered platforms could facilitate communication and collaboration among team members, even across geographically dispersed locations.</li>
+                        <li>**Interactive Storytelling:** AI could enable the creation of interactive films or games, where viewers influence the narrative through their choices.</li>
+                    </ul>
+                
+                    <p>**Technical Exploration:**</p>
+                    <ul>
+                        <li>**Programming Languages:** Python, with potential for JavaScript and SQL for specific components.</li>
+                        <li>**AI Frameworks:** TensorFlow, PyTorch, or other deep learning libraries for building and deploying AI models.</li>
+                        <li>**Backend Development:** Django or Flask for creating robust and scalable web applications.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button12" onclick="toggleDetails('details12', 'button12')">Read More</button>
             </div>
+
+
+
             <div class="project">
                 <h2 onclick="toggleDetails('details13', 'button13')">Video Frame Analysis and Description Generator</h2>
                 <div class="project-summary">
                     Processes video frames to generate descriptive text and voiceover scripts using OpenAI's capabilities, aimed at content creators.
                 </div>
                 <div class="project-details" id="details13">
-                    <p>Processes video frames to generate descriptive text and voiceover scripts using OpenAI's capabilities. The project aims to assist content creators by automating the generation of descriptions and scripts for video content, leveraging OpenCV for frame extraction and OpenAI's models for text and voiceover generation.</p>
+                    <p>This project offers an innovative solution for automating the creation of engaging video content. It processes video files, extracts key frames, and utilizes the power of OpenAI's GPT-4 Vision Preview model to generate descriptive text summaries and captivating voiceover scripts. This tool is especially valuable for content creators, educators, and social media managers who need to produce high-quality videos quickly and efficiently.</p>
+                
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>**Frame Extraction:** Intelligently selects the most representative frames from a video.</li>
+                        <li>**OpenAI GPT-4 Integration:** Leverages GPT-4's advanced image understanding capabilities to generate accurate and informative video descriptions.</li>
+                        <li>**David Attenborough Style Voiceovers:** Creates engaging voiceover scripts in the style of the renowned naturalist, David Attenborough.</li>
+                        <li>**Text-to-Speech (TTS) Conversion:**  Converts generated scripts into natural-sounding audio using OpenAI's TTS API.</li>
+                        <li>**Customization:** Potential for tailoring descriptions and voiceovers to specific genres, audiences, or brand voices.</li>
+                    </ul>
+                
+                    <p><strong>Technical Highlights:</strong></p>
+                    <ul>
+                        <li>**OpenCV:** Utilized for video frame extraction and processing.</li>
+                        <li>**OpenAI API:**  Integrates GPT-4 Vision and TTS models to power text and voiceover generation.</li>
+                        <li>**Python:** Implemented in Python for its flexibility and extensive library support.</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button13" onclick="toggleDetails('details13', 'button13')">Read More</button>
             </div>
             <div class="project">
@@ -279,8 +458,24 @@
                     Automates the transcription of videos from Vimeo and YouTube using machine learning models and existing transcript APIs, aimed at content creators and educators.
                 </div>
                 <div class="project-details" id="details14">
-                    <p>Automates the transcription of videos from Vimeo and YouTube using machine learning models and existing transcript APIs. The project is designed to assist content creators and educators by providing a seamless way to generate transcripts for video content, improving accessibility and enabling easier content creation.</p>
+                    <p>This project simplifies the task of transcribing videos from Vimeo and YouTube platforms, catering to content creators, educators, and anyone who needs to make their video content more accessible or repurpose it for other uses.</p>
+                
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>**Vimeo and YouTube Integration:** Works seamlessly with videos hosted on both platforms.</li>
+                        <li>**Automatic Transcript Generation:** Utilizes OpenAI's Whisper model for accurate and efficient transcription of Vimeo videos.  For YouTube videos, it leverages the platform's built-in Transcript API.</li>
+                        <li>**Multi-Language Support:** Can fetch transcripts in various languages for YouTube videos where available.</li>
+                        <li>**File Saving:** Automatically saves generated transcripts in text files for easy access and editing.</li>
+                        <li>**Flexible URL Handling:** Supports different YouTube URL formats for convenience.</li>
+                    </ul>
+                
+                    <p><strong>Technical Details:</strong></p>
+                    <ul>
+                        <li>**Programming Language:** Python</li>
+                        <li>**Libraries:** `requests`, `vimeo_downloader`, `whisper`, `YouTubeTranscriptApi`</li>
+                    </ul>
                 </div>
+                
                 <button class="toggle-button" id="button14" onclick="toggleDetails('details14', 'button14')">Read More</button>
             </div>
         </div>
