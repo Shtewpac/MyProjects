@@ -64,10 +64,24 @@
         .project h2 {
             margin-top: 0;
             color: #0073e6;
+            cursor: pointer;
         }
-        .project p {
-            font-size: 16px;
+        .project-summary {
             margin: 10px 0;
+        }
+        .project-details {
+            display: none;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .toggle-button {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
@@ -77,6 +91,19 @@
             margin-top: 20px;
         }
     </style>
+    <script>
+        function toggleDetails(id, buttonId) {
+            var details = document.getElementById(id);
+            var button = document.getElementById(buttonId);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                button.textContent = "Read Less";
+            } else {
+                details.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -95,60 +122,164 @@
     <div class="container">
         <div class="content">
             <div class="project">
-                <h2>Automated Live Tissue Precision Slicer</h2>
-                <p>A cutting-edge device developed to improve the slicing of organoids for research, integrating precision motor controls and real-time computer vision for enhanced accuracy and efficiency.</p>
+                <h2 onclick="toggleDetails('details1', 'button1')">Automated Live Tissue Precision Slicer</h2>
+                <div class="project-summary">
+                    A cutting-edge device developed to improve the slicing of organoids for research, integrating precision motor controls and real-time computer vision for enhanced accuracy and efficiency.
+                </div>
+                <div class="project-details" id="details1">
+                    <p>Developed by William Kraft, Beatriz Martinez-Martin, Isabella Lambros, and Yubing Sun at Life Science Laboratories, this device leverages precision motor controls and real-time computer vision to enhance the accuracy, efficiency, and repeatability of slicing, outperforming manual methods.</p>
+                    <p><strong>Device Specifications:</strong></p>
+                    <ul>
+                        <li>Hardware: Imaging tools, biological sample handling, and mechanical engineering.</li>
+                        <li>Closest Commercial Analog: Vibratome.</li>
+                        <li>Open Source License: MIT License.</li>
+                        <li>Cost: Approximately $1500.</li>
+                        <li>Source Repository: <a href="https://github.com/Shtewpac/organoid-detection">GitHub</a></li>
+                    </ul>
+                    <p><strong>Operation and Components:</strong></p>
+                    <ul>
+                        <li>Real-time Computer Vision: Dino-Lite digital microscope captures and processes images to detect organoid positions.</li>
+                        <li>User Interface: Touchscreen for setting slicing parameters (thickness, speed, number of slices).</li>
+                        <li>Software: Utilizes OpenCV for image processing without complex machine learning algorithms.</li>
+                    </ul>
+                    <p><strong>Validation Experiments:</strong></p>
+                    <ul>
+                        <li>Slice Thickness Accuracy: Measuring slices from agarose blocks to ensure they match target thicknesses (250 µm, 350 µm, 500 µm).</li>
+                        <li>Slice Thickness Consistency: Evaluating consistency by calculating the coefficient of variation from multiple slices at 350 µm.</li>
+                        <li>Organoid Viability: Assessing cell viability in sliced organoids using Live/Dead staining and comparing it to unsliced controls.</li>
+                    </ul>
+                </div>
+                <button class="toggle-button" id="button1" onclick="toggleDetails('details1', 'button1')">Read More</button>
             </div>
             <div class="project">
-                <h2>Poker Hand Analyzer</h2>
-                <p>This tool recognizes and evaluates poker hands from images or screenshots using computer vision and template matching techniques, targeting poker enthusiasts, developers, and AI researchers.</p>
+                <h2 onclick="toggleDetails('details2', 'button2')">Poker Hand Analyzer</h2>
+                <div class="project-summary">
+                    Recognizes and evaluates poker hands from images or screenshots using computer vision and template matching techniques, targeting poker enthusiasts, developers, and AI researchers.
+                </div>
+                <div class="project-details" id="details2">
+                    <p>This tool uses computer vision to detect and evaluate poker hands in images or screenshots. It leverages template matching techniques to recognize card suits and ranks accurately. The project is designed for poker enthusiasts, developers, and AI researchers looking to automate the process of poker hand analysis.</p>
+                </div>
+                <button class="toggle-button" id="button2" onclick="toggleDetails('details2', 'button2')">Read More</button>
             </div>
             <div class="project">
-                <h2>Audio Transcription and Note Taking Tool</h2>
-                <p>This project focuses on transcribing audio files into text and splitting the audio based on silence to create manageable chunks. It is designed for students, journalists, researchers, and professionals who need to convert audio recordings into written notes.</p>
+                <h2 onclick="toggleDetails('details3', 'button3')">Audio Transcription and Note Taking Tool</h2>
+                <div class="project-summary">
+                    Transcribes audio files into text, splitting based on silence for manageable chunks, ideal for students and professionals.
+                </div>
+                <div class="project-details" id="details3">
+                    <p>This project focuses on transcribing audio files into text and splitting the audio based on silence to create manageable chunks. It is designed for students, journalists, researchers, and professionals who need to convert audio recordings into written notes. The tool utilizes speech recognition APIs and provides robust error handling.</p>
+                </div>
+                <button class="toggle-button" id="button3" onclick="toggleDetails('details3', 'button3')">Read More</button>
             </div>
             <div class="project">
-                <h2>Block Puzzle Game with Reinforcement Learning AI Agent</h2>
-                <p>An implementation of the classic Block Puzzle game with an AI agent that learns to play the game optimally using reinforcement learning techniques.</p>
+                <h2 onclick="toggleDetails('details4', 'button4')">Block Puzzle Game with Reinforcement Learning AI Agent</h2>
+                <div class="project-summary">
+                    Implementation of the classic Block Puzzle game with an AI agent learning optimal play using reinforcement learning techniques.
+                </div>
+                <div class="project-details" id="details4">
+                    <p>An implementation of the classic Block Puzzle game in Python, accompanied by an AI agent that learns to play the game optimally using reinforcement learning. The AI employs the Q-learning algorithm, ensuring a robust learning approach that allows the model to make optimal decisions based on dynamic game states.</p>
+                </div>
+                <button class="toggle-button" id="button4" onclick="toggleDetails('details4', 'button4')">Read More</button>
             </div>
             <div class="project">
-                <h2>ChatbotProject</h2>
-                <p>A Python-based chatbot designed to store and utilize user-specific information for personalized interactions, aimed at providing a more engaging and personal chatbot experience.</p>
+                <h2 onclick="toggleDetails('details5', 'button5')">ChatbotProject</h2>
+                <div class="project-summary">
+                    A Python-based chatbot designed to store and utilize user-specific information for personalized interactions.
+                </div>
+                <div class="project-details" id="details5">
+                    <p>A Python-based chatbot designed to store and utilize user-specific information for personalized interactions. The project leverages a local database to store user data securely and uses a modular design for extensibility. It integrates natural language processing through the GPT-3.5-turbo model.</p>
+                </div>
+                <button class="toggle-button" id="button5" onclick="toggleDetails('details5', 'button5')">Read More</button>
             </div>
             <div class="project">
-                <h2>Dinosaur Game with Evolutionary Learning and Q-Learning</h2>
-                <p>An implementation of the Dinosaur Game using Pygame, with AI agents trained using Q-learning and Evolutionary Learning techniques to avoid obstacles.</p>
+                <h2 onclick="toggleDetails('details6', 'button6')">Dinosaur Game with Evolutionary Learning and Q-Learning</h2>
+                <div class="project-summary">
+                    An implementation of the Dinosaur Game using Pygame, with AI agents trained using Q-learning and Evolutionary Learning techniques to avoid obstacles.
+                </div>
+                <div class="project-details" id="details6">
+                    <p>An implementation of the Dinosaur Game using Pygame, with AI agents trained using Q-learning and Evolutionary Learning techniques to avoid obstacles. The project includes both Q-learning for reinforcement learning and Evolutionary Learning to evolve the best-performing AI agents over generations.</p>
+                </div>
+                <button class="toggle-button" id="button6" onclick="toggleDetails('details6', 'button6')">Read More</button>
             </div>
             <div class="project">
-                <h2>Gear Generator</h2>
-                <p>A tool for creating and visualizing involute spur gears based on user-defined specifications, aimed at DIY enthusiasts, mechanical engineers, and educators.</p>
+                <h2 onclick="toggleDetails('details7', 'button7')">Gear Generator</h2>
+                <div class="project-summary">
+                    A tool for creating and visualizing involute spur gears based on user-defined specifications, aimed at DIY enthusiasts, mechanical engineers, and educators.
+                </div>
+                <div class="project-details" id="details7">
+                    <p>A tool for creating and visualizing involute spur gears based on user-defined specifications. The project is designed for DIY enthusiasts, mechanical engineers, and educators. It provides an intuitive interface for specifying gear parameters and visualizing the resulting gear profiles.</p>
+                </div>
+                <button class="toggle-button" id="button7" onclick="toggleDetails('details7', 'button7')">Read More</button>
             </div>
             <div class="project">
-                <h2>PyGear</h2>
-                <p>A Python-based tool for creating and analyzing gear geometries, with capabilities to export designs in various 3D CAD file formats.</p>
+                <h2 onclick="toggleDetails('details8', 'button8')">PyGear</h2>
+                <div class="project-summary">
+                    A Python-based tool for creating and analyzing gear geometries, with capabilities to export designs in various 3D CAD file formats.
+                </div>
+                <div class="project-details" id="details8">
+                    <p>PyGear is a Python-based tool for creating and analyzing gear geometries, with capabilities to export designs in various 3D CAD file formats. The project supports the design of external gears, internal gears, and planetary stages, providing detailed customization options and accurate geometric calculations.</p>
+                </div>
+                <button class="toggle-button" id="button8" onclick="toggleDetails('details8', 'button8')">Read More</button>
             </div>
             <div class="project">
-                <h2>Gear Profile and Modeling Tool</h2>
-                <p>A comprehensive tool for creating intricate gear profiles and 3D models, ensuring accurate calculations and compliance with engineering standards.</p>
+                <h2 onclick="toggleDetails('details9', 'button9')">Gear Profile and Modeling Tool</h2>
+                <div class="project-summary">
+                    A comprehensive tool for creating intricate gear profiles and 3D models, ensuring accurate calculations and compliance with engineering standards.
+                </div>
+                <div class="project-details" id="details9">
+                    <p>A comprehensive tool for creating intricate gear profiles and 3D models, ensuring accurate calculations and compliance with engineering standards. The project integrates advanced geometric libraries to automate the gear design process, providing detailed customization options and export capabilities for CAD applications.</p>
+                </div>
+                <button class="toggle-button" id="button9" onclick="toggleDetails('details9', 'button9')">Read More</button>
             </div>
             <div class="project">
-                <h2>Advanced OCR and AI Text Processing Application</h2>
-                <p>An OCR application integrating Google Cloud Vision for text detection and OpenAI’s GPT models for generating text-based responses.</p>
+                <h2 onclick="toggleDetails('details10', 'button10')">Advanced OCR and AI Text Processing Application</h2>
+                <div class="project-summary">
+                    An OCR application integrating Google Cloud Vision for text detection and OpenAI’s GPT models for generating text-based responses.
+                </div>
+                <div class="project-details" id="details10">
+                    <p>An OCR application integrating Google Cloud Vision for text detection and OpenAI’s GPT models for generating text-based responses. The project is designed to automate text extraction and analysis from images or scanned documents, providing accurate and efficient OCR capabilities combined with AI-driven text processing.</p>
+                </div>
+                <button class="toggle-button" id="button10" onclick="toggleDetails('details10', 'button10')">Read More</button>
             </div>
             <div class="project">
-                <h2>Card Recognition and Poker Hand Evaluation System</h2>
-                <p>An advanced application for detecting and recognizing playing cards from images and evaluating poker hands using image processing and machine learning techniques.</p>
+                <h2 onclick="toggleDetails('details11', 'button11')">Card Recognition and Poker Hand Evaluation System</h2>
+                <div class="project-summary">
+                    An advanced application for detecting and recognizing playing cards from images and evaluating poker hands using image processing and machine learning techniques.
+                </div>
+                <div class="project-details" id="details11">
+                    <p>An advanced application for detecting and recognizing playing cards from images and evaluating poker hands using image processing and machine learning techniques. The project combines template matching, contour detection, and OCR to accurately identify cards and determine the best poker hand.</p>
+                </div>
+                <button class="toggle-button" id="button11" onclick="toggleDetails('details11', 'button11')">Read More</button>
             </div>
             <div class="project">
-                <h2>AI-Driven Filmmaking Tool</h2>
-                <p>Leverages AI to assist in the filmmaking process by automating tasks and enhancing production workflows, aimed at filmmakers and production studios.</p>
+                <h2 onclick="toggleDetails('details12', 'button12')">AI-Driven Filmmaking Tool</h2>
+                <div class="project-summary">
+                    Leverages AI to assist in the filmmaking process by automating tasks and enhancing production workflows, aimed at filmmakers and production studios.
+                </div>
+                <div class="project-details" id="details12">
+                    <p>Leverages AI to assist in the filmmaking process by automating tasks and enhancing production workflows. The project aims to solve issues related to inefficient production workflows and the high costs and time associated with traditional filmmaking methods. It integrates machine learning algorithms and database management to streamline various aspects of film production.</p>
+                </div>
+                <button class="toggle-button" id="button12" onclick="toggleDetails('details12', 'button12')">Read More</button>
             </div>
             <div class="project">
-                <h2>Video Frame Analysis and Description Generator</h2>
-                <p>Processes video frames to generate descriptive text and voiceover scripts using OpenAI's capabilities, aimed at content creators.</p>
+                <h2 onclick="toggleDetails('details13', 'button13')">Video Frame Analysis and Description Generator</h2>
+                <div class="project-summary">
+                    Processes video frames to generate descriptive text and voiceover scripts using OpenAI's capabilities, aimed at content creators.
+                </div>
+                <div class="project-details" id="details13">
+                    <p>Processes video frames to generate descriptive text and voiceover scripts using OpenAI's capabilities. The project aims to assist content creators by automating the generation of descriptions and scripts for video content, leveraging OpenCV for frame extraction and OpenAI's models for text and voiceover generation.</p>
+                </div>
+                <button class="toggle-button" id="button13" onclick="toggleDetails('details13', 'button13')">Read More</button>
             </div>
             <div class="project">
-                <h2>Video Transcript Generator</h2>
-                <p>Automates the transcription of videos from Vimeo and YouTube using machine learning models and existing transcript APIs, aimed at content creators and educators.</p>
+                <h2 onclick="toggleDetails('details14', 'button14')">Video Transcript Generator</h2>
+                <div class="project-summary">
+                    Automates the transcription of videos from Vimeo and YouTube using machine learning models and existing transcript APIs, aimed at content creators and educators.
+                </div>
+                <div class="project-details" id="details14">
+                    <p>Automates the transcription of videos from Vimeo and YouTube using machine learning models and existing transcript APIs. The project is designed to assist content creators and educators by providing a seamless way to generate transcripts for video content, improving accessibility and enabling easier content creation.</p>
+                </div>
+                <button class="toggle-button" id="button14" onclick="toggleDetails('details14', 'button14')">Read More</button>
             </div>
         </div>
     </div>
